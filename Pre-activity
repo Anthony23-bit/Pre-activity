@@ -1,0 +1,127 @@
+/*Write a C program that ask the nd age and
+then determine whether he/she eligible for
+voting using Conditional Statements 
+------------------------------------------------------*/  
+#include <stdio.h>
+
+
+
+int main(){
+
+    char name;
+    int age=0;
+
+    printf("Name:");
+    scanf("%s", &name);
+
+    printf("Age:");
+    scanf("%d", &age);
+
+    if(!age!=0){
+        printf("\nInvalid age, Please Try Again.");
+    }
+     else if(age>=18){
+
+        printf("\nYou are eligible for voting.");
+    }
+    else{
+
+        printf("\nYou are not eligible for vote.");
+    }
+return 0;
+}
+
+
+
+/*Write a C Program that checks positive, negative, 
+zero or invalid inputed integer using switch case
+---------------------------------------------------*/
+
+#include <stdio.h>
+
+int main(){
+
+    int n=0;
+
+    printf("Input any Integer: ");
+    scanf("%d", &n);
+    printf("\n");
+
+    switch(n<0){
+
+        case 0:
+
+            if(!n!=0){
+                printf("The Inputed data is Invalid\n\n");
+            }
+            else{
+                printf("The Integer is a Positive Number.\n\n");
+            }
+            break;
+        case 1:
+            printf("The Integer is a Negative Number.\n\n");
+            break;
+    
+}
+    return 0;
+}
+
+
+
+/*Write a program that tells the user to input
+ an integer and then outputs the number with the 
+digits reversed using Iterative Looping
+------------------------------------------------*/
+
+#include <stdio.h>
+
+int main()
+{
+  int reverse, i = 0;
+
+  printf("Enter a number to reverse: ");
+  scanf("%d", &reverse);
+  printf("\n");
+
+  while(reverse != 0)
+  {
+    i = i * 10;
+    i = i + reverse % 10;
+    reverse = reverse / 10;
+  }
+  printf("\nReversed: %d", i);
+
+  return 0;
+}
+
+
+
+/*Write a program ask the user two integers then add, multiple,
+divide and subtruct them
+---------------------------------------------------------------*/
+
+#include <stdio.h>
+
+int main(){
+
+    int x, y, addition, multiplication, division, subract;
+
+    printf("Input a Number: ");
+    scanf("%d", &x);
+
+    printf("Input Another Number: ");
+    scanf("%d", &y);
+
+    addition = x + y;
+    multiplication = x * y;
+    division = x / y;
+    subract = x - y;
+
+    printf("\n");
+    printf("ADD = %d\n", addition);
+    printf("MUL = %d\n", multiplication);
+    printf("DIV = %d\n", division);
+    printf("SUB = %d\n\n", subract);
+
+    return 0;
+}
